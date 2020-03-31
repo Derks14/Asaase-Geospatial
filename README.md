@@ -1,6 +1,8 @@
-# asaase
+# Asaase Geospatial System
 
-A new Flutter application.
+A geospatial system capable of processing spatial data.
+In this project,I created my own web mapping service using Open Geospatial Consortium ( OGC ) web standards.
+A mobile app was futher developed for the visualisation of OGC web mapping services, Google Maps with real time GPS
 
 ## Getting Started
 
