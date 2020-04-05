@@ -1,18 +1,31 @@
 # Asaase Geospatial System
 
 A geospatial system capable of processing spatial data.
-In this project,I created my own web mapping service using Open Geospatial Consortium ( OGC ) web standards.
+In this project,
+I created my own web mapping service using Open Geospatial Consortium ( OGC ) web standards.
 A mobile app was futher developed for the visualisation of OGC web mapping services, Google Maps with real time GPS
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Set Up Spatial Database Server and Web Map Server
 
-A few resources to get you started if this is your first Flutter project:
+1. Download input spatial data to populate the database.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+    a. Download shapefile containing worldmap or countries data
+    eg. http://www.naturalearthdata.com/ , http://www.gadm.org/version2
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Set up a spatial database server:
+    Install PostrgreSQL http://www.postgresql.org (user manual)
+    Install PostGIS http://postgis.net/documentation/ (user manual)
+
+3. Set up  a web map server:
+    Install GeoServer see http://docs.geoserver.org/ (user manual)
+
+4. Create a PostgreSQL database with PostGIS extension
+
+5. Load the shapefiles into the PostGIS database
+
+6. Connect PostGIS to Geoserver
+    Publish the tables in the PostGIS database as layers to GeoServer
+
+7. Preview the published layer in GeoServer using OGC Web Map Service ( WMS )

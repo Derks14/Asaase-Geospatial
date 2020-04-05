@@ -11,8 +11,8 @@ class Layer {
 
   static List<Layer> fetchall(){
     return [
-      Layer(1, 'https://419e56a7.ngrok.io/geoserver/www/server.html',
-          'Current Location', 'A geoserver layer showing an interactive layer of the world map. Including all countries'),
+      Layer(1, 'https://419e56a7.ngrok.io/geoserver/www/map_online.html',
+          'Current Location', 'A geoserver layer on google maps showing an interactive layer of the world map.'),
 
       Layer(5, 'https://google.com', 'Google', 'A geoserver layer showing the various districts in regions on an interactive map of Ghana'),
 
